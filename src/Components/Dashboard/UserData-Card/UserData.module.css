@@ -1,0 +1,68 @@
+.userdatacontainer {
+  background: #5746ea;
+  color: #ffffff;
+  border-radius: 19px;
+  padding: 15px 0 0 0;
+  display: flex;
+  justify-content: space-around;
+  width: 35vw;
+}
+.userimage img {
+  margin-left: 10px;
+  height: 210px;
+}
+.userdata {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.userinfo {
+  width: 220px;
+  margin-top: 15px;
+  text-transform: capitalize;
+}
+.name_email {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+.username {
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+}
+.usercategoryinfo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 230px;
+  height: 83px;
+  margin-bottom: 12px;
+  overflow: auto;
+}
+.usercategoryinfo::-webkit-scrollbar {
+  width: 8px;
+}
+.usercategoryinfo::-webkit-scrollbar-thumb {
+  background-color: #9f94ff;
+  border-radius: 5px;
+}
+.usercategoryinfo::-webkit-scrollbar-track {
+  background-color: #5746ea;
+}
+
+.usercategoryinfo button {
+  background-color: #9f94ff;
+  color: #fff;
+  width: 100px;
+  height: 35px;
+  border-radius: 21px;
+  font-family: Roboto;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  outline: none;
+}

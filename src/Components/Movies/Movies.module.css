@@ -1,0 +1,71 @@
+.moviesContainer {
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+}
+.moviesContainer p {
+  padding: 10px 40px 20px 55px;
+  font-family: Roboto;
+  font-size: 27px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+.moviesHeader {
+  width: 100%;
+  padding: 20px 40px 10px 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.moviesHeader h3 {
+  font-family: Single Day;
+  font-size: 43px;
+  font-weight: 400;
+  color: #72db73;
+}
+.moviesHeader img {
+  width: 50px;
+  cursor: pointer;
+}
+.movies {
+  width: 96%;
+  height: auto;
+  overflow: auto;
+  margin-bottom: 20px;
+}
+.movies::-webkit-scrollbar {
+  width: 10px;
+}
+.movies::-webkit-scrollbar-thumb {
+  background-color: #878787;
+  border-radius: 5px;
+}
+.movies::-webkit-scrollbar-track {
+  background-color: #000;
+}
+.moviesTitles {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-around;  
+}
+
+.moviesTitles p {
+  color: #878787; 
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  text-align: left;
+}
+.moviesImages{
+  display: flex;
+  gap: 20px;
+  padding-left: 55px;
+}
+.moviesImages img{
+  border: 1px solid #000;
+  height: 170px;
+  width: 290px;
+}

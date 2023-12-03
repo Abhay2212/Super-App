@@ -1,0 +1,20 @@
+.categorycardscontainer {
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.categorycard {
+  width: calc(150px-6px);
+  height: calc(100px-6px);
+  padding: 3px 10px;
+}
+.categorycard h2 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Roboto";
+  margin-bottom: 10px;
+}
+.categorycard img {
+  width: 183px;
+}
