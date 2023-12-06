@@ -10,7 +10,7 @@ function Category({ data, onNextPage }) {
 
   useEffect(() => {
     setShowError(
-      titleArray.length <= minSelectedTitles && titleArray.length > 0
+      titleArray.length < minSelectedTitles && titleArray.length > 0
     );
   }, [titleArray, minSelectedTitles]);
 
@@ -28,7 +28,7 @@ function Category({ data, onNextPage }) {
   }
 
   const handleNextPage = () => {
-    if (titleArray.length <= minSelectedTitles) {
+    if (titleArray.length < minSelectedTitles) {
       setShowError(true);
     } else {
       localStorage.setItem("selectedTitles", JSON.stringify(titleArray));

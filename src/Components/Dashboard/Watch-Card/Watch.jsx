@@ -73,8 +73,6 @@ function Watch() {
 
   const handleStartStop = () => {
     setStartTimer(true);
-    // setStartTimer((prevStartTimer) => !prevStartTimer);
-    // if(startTimer) setDisplayedTime("00:00:00");
     console.log(`starttime ${startTimer}`)
     console.log(displayedTime)
   };

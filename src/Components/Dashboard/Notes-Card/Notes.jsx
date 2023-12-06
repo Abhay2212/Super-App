@@ -19,7 +19,7 @@ function Notes() {
   return (
     <div className={style.notescontainer}>
       <h2>All notes</h2>
-      <div className="typenotes">
+      <div className={style.typenotes}>
         <textarea
           value={notes}
           onChange={handleNotesChange}
