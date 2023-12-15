@@ -4,8 +4,8 @@
   cursor: pointer;
 }
 .categorycard {
-  width: calc(150px-6px);
-  height: calc(100px-6px);
+  /* width: calc(150px-6px);
+  height: calc(100px-6px); */
   padding: 3px 10px;
 }
 .categorycard h2 {
