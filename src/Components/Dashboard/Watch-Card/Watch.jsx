@@ -26,7 +26,7 @@ function Watch() {
     };
     
     const [displayedTime, setDisplayedTime] = useState(formatTime(totalSeconds));
-
+    
   const handleIncrement = (unit) => {
     if (!startTimer) {
       switch (unit) {

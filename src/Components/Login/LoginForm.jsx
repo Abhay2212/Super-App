@@ -30,7 +30,8 @@ function LoginForm({ formData, onChange, onSubmit, formErrors }) {
     />
     <span className={style.error}>{formErrors.email}</span>
     <input
-      type="number"
+      type="tel"
+      inputMode="numeric"
       placeholder="Mobile"
       value={formData.mobile}
       name="mobile"

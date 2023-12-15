@@ -10,7 +10,7 @@ function News() {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://newsapi.org/v2/everything?q=tesla&from=2023-11-04&sortBy=publishedAt&apiKey=1d43133c0e204e92a67c914da770465d"
+          "https://newsapi.org/v2/everything?q=tesla&from=2023-11-15&sortBy=publishedAt&apiKey=1d43133c0e204e92a67c914da770465d"
         );
         if (!response.ok) {
           throw new Error("Network response was not ok");
@@ -29,7 +29,7 @@ function News() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentNewsIndex((prevIndex) => (prevIndex + 1) % newsData.length);
-    }, 19000);
+    }, 10000);
 
     return () => clearInterval(intervalId);
   }, [currentNewsIndex, newsData]);
@@ -40,10 +40,10 @@ function News() {
 
   return (
     <div className={style.newscontainer}>
-      {newsData.length > 0 && (
+      {newsData.length > 0 ? (
         <div key={newsData[currentNewsIndex].id}>
           <div className={style.news}>
-            <img src={getImageUrl(newsData[currentNewsIndex])} alt="" />
+            <img src={getImageUrl(newsData[currentNewsIndex])} alt="NewsImg" />
             <div className={style.newsinfo}>
               <p className={style.newstitle}>
                 {newsData[currentNewsIndex].title}
@@ -55,6 +55,19 @@ function News() {
           </div>
           <div className={style.newsdescription}>
             <p>{newsData[currentNewsIndex].description}</p>
+          </div>
+        </div>
+      ) : (
+        <div>
+          <div className={style.news}>
+            <img src={NewsDefault} alt="defaultImg" />
+            <div className={style.newsinfo}>
+              <p className={style.newstitle}>Default News Title</p>
+              <p className={style.newsdate}>Default Date</p>
+            </div>
+          </div>
+          <div className={style.newsdescription}>
+            <p>This is the default news description.</p>
           </div>
         </div>
       )}
