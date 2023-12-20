@@ -94,7 +94,6 @@ function Login({ handleSubmit }) {
     setFormErrors(newErrors);
     return valid;
   };
-
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -111,7 +110,6 @@ function Login({ handleSubmit }) {
       handleSubmit();
     }
   };
-
   return (
     <div className={style.container}>
       <div className={style.left}>

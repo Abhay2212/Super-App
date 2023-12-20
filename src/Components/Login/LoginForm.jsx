@@ -8,7 +8,7 @@ function LoginForm({ formData, onChange, onSubmit, formErrors }) {
     <input
       type="text"
       placeholder="Name"
-      value={formData.name}
+      value={formData.name} 
       name="name"
       onChange={onChange}
     />
