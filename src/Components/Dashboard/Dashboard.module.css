@@ -24,3 +24,18 @@
   right: 30px;
   cursor: pointer;
 }
+
+
+
+/* Media query for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+  .dashboardcontainer {
+    height: 100%;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  overflow: auto;
+ }
+ .dashboardbutton {
+  bottom: -248px;
+}
+}

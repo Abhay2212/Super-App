@@ -66,3 +66,35 @@
   border: none;
   outline: none;
 }
+
+
+
+
+/* Media query for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+  .userdatacontainer {
+    padding-top: 10px;
+    width: 57vw;
+  }
+  .userimage img {
+    margin-left: 0px;
+    height: 210px;
+  }
+  .name_email {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  .username {
+    font-size: 30px;
+  }
+  .usercategoryinfo {
+    gap: 7px;
+    width: 210px;
+    margin-top: 10px;
+  }
+  .usercategoryinfo button {
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+  }
+}

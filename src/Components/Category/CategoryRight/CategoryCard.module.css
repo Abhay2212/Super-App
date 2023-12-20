@@ -16,3 +16,14 @@
 .categorycard img {
   width: 183px;
 }
+
+
+/* Media query for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+  .categorycard {
+    padding: 3px 10px;
+  }
+  .categorycard img {
+    width: 153px;
+  }
+}

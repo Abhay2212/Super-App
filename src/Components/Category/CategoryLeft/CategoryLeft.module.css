@@ -67,3 +67,21 @@
   align-items: center;
 } 
 
+
+
+/* Media query for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+  .categoryleft {
+    color: #fff;
+    width: 100%;
+    padding: 20px 34px;
+  }
+  .categoryleft h2 {
+    font-size: 48px;
+  }
+  .categoryleft h3 {
+    font-size: 45px;
+    padding-top: 20px;
+  }
+}
+

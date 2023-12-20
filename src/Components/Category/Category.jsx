@@ -38,33 +38,35 @@ function Category({ data, onNextPage }) {
 
   return (
     <>
-      <div className={style.category}>
-        <CategoryLeft
-          titleArray={titleArray}
-          setTitleArray={setTitleArray}
-          minSelectedTitles={minSelectedTitles}
-          showError={showError}
-        />
-        <div className={style.rightContainer}>
-          {data.map((item) => (
-            <CategoryRight
-              onSelect={handleSelectCard}
-              key={item.title}
-              title={item.title}
-              imageUrl={require(`../Assets/${item.imageUrl}`)}
-              backgroundColor={item.backgroundColor}
-              isSelected={titleArray.includes(item.title)}
-            />
-          ))}
+      <div className={style.categorymain}>
+        <div className={style.category}>
+          <CategoryLeft
+            titleArray={titleArray}
+            setTitleArray={setTitleArray}
+            minSelectedTitles={minSelectedTitles}
+            showError={showError}
+          />
+          <div className={style.rightContainer}>
+            {data.map((item) => (
+              <CategoryRight
+                onSelect={handleSelectCard}
+                key={item.title}
+                title={item.title}
+                imageUrl={require(`../Assets/${item.imageUrl}`)}
+                backgroundColor={item.backgroundColor}
+                isSelected={titleArray.includes(item.title)}
+              />
+            ))}
+          </div>
         </div>
+        <button
+          type="submit"
+          className={style.categorynextbutton}
+          onClick={handleNextPage}
+        >
+          Next Page
+        </button>
       </div>
-      <button
-        type="submit"
-        className={style.categorynextbutton}
-        onClick={handleNextPage}
-      >
-        Next Page
-      </button>
     </>
   );
 }

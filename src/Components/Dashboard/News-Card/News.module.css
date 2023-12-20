@@ -32,7 +32,7 @@
   font-weight: 500;
   margin-bottom: 15px;
   white-space: nowrap;
-  overflow: hidden; 
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 .newsdate {
@@ -44,7 +44,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  max-height: 160px; 
+  max-height: 160px;
 }
 .newsdescription p {
   font-family: Roboto;
@@ -54,4 +54,35 @@
   white-space: normal;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/* Media query for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+  .newscontainer {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    width: 35vw;
+  }
+  .news img {
+    height: 45vh;
+  }
+  .newsinfo {
+    width: 100%;
+    height: 75px;
+    padding: 10px 20px;
+    top: 242px;
+  }
+  .newstitle {
+    font-size: 25px;
+  }
+  .newsdate {
+    font-size: 12px;
+  }
+  .newsdescription {
+    max-height: 200px;
+  }
+  .newsdescription p {
+    font-size: 14px;
+  }
+
 }

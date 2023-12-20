@@ -83,3 +83,85 @@
   font-size: 22px;
   text-align: center;
 }
+
+
+/* Media query for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+  .CountdownCircleTimerContainer {
+    width: 165px;
+    height: 165px;
+    margin-top: 8px;
+    background: #191e39;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 4px #1e1b1b inset;
+  }
+  .CountdownCircleTimer {
+    margin-top: 17px;
+    margin-left: 17.5px;
+  }
+  .timerContainer{
+    position: relative;
+  }
+  .timerContainer span {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 20px;
+  }
+  
+  .watchRight {
+    margin: 8px 0px 12px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .watchRightContainer {
+    width: 310px;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .watchRightContainer p{
+    color: #949494;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .watchRightContainer h3{
+      color: #ffffff;
+      font-family: Roboto;
+      font-size: 28px;
+      font-weight: 400;
+  }
+  .GoTriangleDownUp{
+      font-size: 35px;
+      color: #949494;
+  }
+  .dot{
+    margin-top: 22px;
+  }
+  .dot span{
+      font-size: 38px;
+      color: #FFFFFF
+  }
+  .hours {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .watchRightButton {
+    width: 310px;
+  }
+  .watchRightButton button {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #ff6a6a;
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 3px 0px;
+    font-family: Roboto;
+    font-size: 22px;
+    text-align: center;
+  }
+}

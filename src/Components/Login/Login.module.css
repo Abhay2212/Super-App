@@ -108,3 +108,32 @@
   text-align: left;
   font-size: 14px;
 }
+
+
+/* Media query for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .left {
+    width: 0%;
+  }
+  .left img {
+    visibility: hidden;
+  }
+  .left p {
+   visibility: hidden;
+  }
+  .right {
+    width: 100%;
+    overflow: hidden;
+  }
+  .right h2 {
+    color: #72db73;
+    font-size: 62px;
+    font-family: Single Day;
+    text-align: center;
+    margin-top: 25px;
+  }
+}
