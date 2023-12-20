@@ -84,5 +84,14 @@
   .newsdescription p {
     font-size: 14px;
   }
+}
+
+
+/* Media query for screens smaller than 400px */
+@media screen and (max-width: 400px) {
+  .newscontainer {
+    width: 90vw;
+    height: 500px;
+  }
 
 }

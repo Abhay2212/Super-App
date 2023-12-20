@@ -60,3 +60,13 @@ textarea::-webkit-scrollbar-track {
     font-size: 16px;
   }
 }
+
+
+
+
+/* Media query for screens smaller than 400px */
+@media screen and (max-width: 400px) {
+  .notescontainer {
+    width: 90vw;
+  }
+}

@@ -25,17 +25,26 @@
   cursor: pointer;
 }
 
-
-
 /* Media query for screens smaller than 600px */
 @media screen and (max-width: 600px) {
   .dashboardcontainer {
     height: 100%;
     gap: 10px;
     grid-template-columns: 1fr 1fr;
-  overflow: auto;
- }
- .dashboardbutton {
-  bottom: -248px;
+    overflow: auto;
+  }
+  .dashboardbutton {
+    bottom: -248px;
+  }
 }
+
+/* Media query for screens smaller than 400px */
+@media screen and (max-width: 400px) {
+  .dashboardcontainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .dashboardbutton {
+    bottom: -950px;
+  }
 }

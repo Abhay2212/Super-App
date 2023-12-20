@@ -98,3 +98,10 @@
     font-size: 15px;
   }
 }
+
+/* Media query for screens smaller than 400px */
+@media screen and (max-width: 400px) {
+  .userdatacontainer {
+    width: 90vw;
+  }
+}
